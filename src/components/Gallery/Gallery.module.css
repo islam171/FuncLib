@@ -1,0 +1,66 @@
+.Gallery {
+	overflow-x: auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: nowrap;
+	padding: 0.25rem 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+.Gallery::-webkit-scrollbar {
+	display: none;
+}
+
+.item {
+	border-radius: 10px;
+	position: relative;
+	flex: 0 0 auto;
+	display: flex;
+	align-items: end;
+	overflow: hidden;
+	transition: 0.3s ease-in-out;
+}
+
+.item:hover {
+	transform: translateY(-5px);
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+	background-color: #888;
+}
+
+.withText {
+}
+
+.horizontal {
+	margin-bottom: 2rem;
+	width: 31px;
+}
+
+.vertical {
+	height: 288px;
+	width: 20%;
+	max-width: 200px;
+}
+
+.content {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+}
+
+.title {
+	font-size: 1rem;
+	margin-bottom: 0.25rem;
+	color: white;
+}
+
+.content .subTitle {
+	color: rgb(107 114 128);
+}

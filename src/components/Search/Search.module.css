@@ -1,0 +1,20 @@
+.Search {
+	border: 1px solid var(--gray__600);
+	border-radius: 1rem;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	color: #888;
+}
+
+.Search input {
+	outline: none;
+	background-color: transparent;
+	border: none;
+	color: white;
+	padding: 0 10px;
+}
+
+.Search span {
+	display: flex;
+}

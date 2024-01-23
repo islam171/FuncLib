@@ -1,5 +1,6 @@
 import {useForm} from "react-hook-form";
 import axios from "axios";
+import styles from "./form1.module.css"
 
 const form2 = () => {
 
@@ -21,7 +22,7 @@ const form2 = () => {
     }
 
     return (
-        <form action="" onSubmit={handleSubmit(onSubmit)}>
+        <form action="" onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <label htmlFor="">form 2</label><br/>
             <input type={"text"} name={"name"} {...register('name', {required: "Укажите имя продукта"})} /><br/>
             <input type={"number"} name={"price"} {...register('price', {required: "Укажите цену"})}/><br/>

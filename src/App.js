@@ -1,7 +1,6 @@
-import Slider from "./components/Slider/Slider";
 import './app.scss'
 import {useState} from "react";
-import Time from "./components/Time/Time";
+import Form1 from "./components/forms/form1";
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
 
     return (<>
         <div className={'wrapper'}>
-            <Time/>
+            <Form1/>
         </div>
     </>);
 }
